@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fluffington Post — A Pomeranian Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+        <a href="#top" class="brand" id="brandMark">
+            <img 
+                class="brand-mark" 
+                src="img/logo.png" 
+                alt="The Fluffington Post logo"
+            >
+            <span class="brand-text">The Fluffington Post</span>
+        </a>
+
+        <p class="tagline">
+            Reporting on the pomeranian condition, one dramatic sigh at a time.
+        </p>
+    </div>
+
+    <nav class="site-nav" aria-label="Primary">
+        <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#articles">The Diaries</a></li>
+            <li><a href="#about">Meet the Pack</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <main id="top">
+
+    <section class="hero" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Small dog. Big attitude.</h1>
+      <p>Pomeranians weigh about as much as a bag of sugar and carry themselves like they own the building. This is a small newsroom dedicated to their antics, their upkeep, and the occasional apology they will never give you.</p>
+    </section>
+
+    <section id="articles" class="articles" aria-labelledby="articles-heading">
+      <h2 id="articles-heading" class="section-heading">The Diaries</h2>
+
+      <article class="post post--right">
+        <div class="post-content">
+          <div class="post-media">
+            <img src="img/pom1.png" alt="Cute pomeranian">
+          </div>
+          <div class="post-body">
+            <p class="post-meta">Field Notes · Behavior</p>
+            <h3>The Art of Selective Listening</h3>
+            <p>Call her name once and she will glance up, blink, and return to staring out the window. Call her name a second time, in the tone that means treats are involved, and she will arrive within 1.2 seconds flat. This is not disobedience. This is editorial discretion.</p>
+            <p>Trainers will tell you pomeranians are highly intelligent and easy to teach. What they leave out is that intelligence and cooperation are not the same skill. She has learned every command you've ever taught her. She has simply decided which ones are worth her time today, and the answer changes hourly.</p>
+          </div>
+        </div>
+
+        <div class="post-comments">
+          <h4>Comments</h4>
+          <form class="comment-form" data-post="listening" novalidate>
+            <div class="form-row">
+              <label for="name-1">Name</label>
+              <input type="text" id="name-1" name="name" required>
+            </div>
+            <div class="form-row">
+              <label for="email-1">Email</label>
+              <input type="email" id="email-1" name="email" required>
+            </div>
+            <div class="form-row">
+              <label for="comment-1">Comment</label>
+              <textarea id="comment-1" name="comment" rows="3" required></textarea>
+            </div>
+            <button type="submit">Leave a comment</button>
+            <p class="form-response" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </article>
+
+      <article class="post post--left">
+        <div class="post-content">
+          <div class="post-media">
+            <img src="img/pom2.png" alt="Cute pomeranian">
+          </div>
+          <div class="post-body">
+            <p class="post-meta">Grooming · Guide</p>
+            <h3>Fluff Maintenance 101</h3>
+            <p>Underneath that cloud of fur is a double coat doing serious work: a soft, insulating undercoat and a longer, weatherproof topcoat. Brushing three to four times a week keeps both layers separate and mat-free, which matters more than most owners realize until they skip a week.</p>
+            <p>A slicker brush handles the outer coat, while a wide-tooth comb reaches the undercoat close to the skin. Bathing every three to four weeks is usually plenty — any more and you risk stripping the natural oils that keep that famous coat glossy in the first place.</p>
+          </div>
+        </div>
+
+        <div class="post-comments">
+          <h4>Comments</h4>
+          <form class="comment-form" data-post="grooming" novalidate>
+            <div class="form-row">
+              <label for="name-2">Name</label>
+              <input type="text" id="name-2" name="name" required>
+            </div>
+            <div class="form-row">
+              <label for="email-2">Email</label>
+              <input type="email" id="email-2" name="email" required>
+            </div>
+            <div class="form-row">
+              <label for="comment-2">Comment</label>
+              <textarea id="comment-2" name="comment" rows="3" required></textarea>
+            </div>
+            <button type="submit">Leave a comment</button>
+            <p class="form-response" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </article>
+
+    </section>
+
+    <section id="about" class="about" aria-labelledby="about-heading">
+      <div class="about-media">
+        <img src="img/deor.png" alt="Cute pomeranian">
+      </div>
+      <div class="about-body">
+        <h2 id="about-heading" class="section-heading">Meet the Pack</h2>
+        <p>This blog is written and occasionally supervised by a pomeranian who reviews every draft by sitting on it. Questions, corrections, and unsolicited opinions about the outfit in paragraph two are welcome under either article above.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 The Fluffington Post. Filed under supervision of a very small editor-in-chief.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
